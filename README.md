@@ -17,4 +17,4 @@ For each sum *S*, there are *sums(M, S)* different starting regions with sum *S*
 
 Finally, we neet to take unused digits into account. They can be anything, so for each unused digit, we need to multiply the result by *B*. This gives final answer.
 
-For example, for *B=13*, *N=13*, *M=6* there are *1107623942191* "pretty" numbers according to this algorithm.
+For example, for *B=13*, *N=13*, *M=6* there are *9203637295151* "pretty" numbers according to this algorithm.
