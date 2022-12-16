@@ -10,7 +10,7 @@ class PrettyNumberCounter
 private:
 	static constexpr const size_t region_size = (2 * init_region_size > number_size) ? (number_size - init_region_size) : (init_region_size);
 	static constexpr const size_t unused_digits = number_size - 2 * region_size;
-	static constexpr const size_t max_sum = num_system_base * region_size + 1;
+	static constexpr const size_t max_sum = (num_system_base - 1) * region_size + 1;
 	std::array<uint32_t, max_sum * region_size> sums{};
 
 	void calculate_sums()
