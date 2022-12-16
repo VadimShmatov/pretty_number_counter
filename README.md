@@ -1,6 +1,6 @@
 # pretty_number_counter
 ## Task details
-Calculate the number of pretty numbers of length *N* (including leading zeros) in a base *B* numeral system. The number is considered pretty if the sum of the first *M* digits equals to the sum of the last *M* digits.
+Calculate the number of pretty numbers of length *N* (including leading zeros) in a base *B* numeral system. The number is considered pretty if the sum of the first *M* digits equals the sum of the last *M* digits.
 
 ## Solution
 Lets divide the number into 3 parts: starting region (the first *M* digits), unused digits and ending region (the last *M* digits).
