@@ -19,7 +19,7 @@ private:
 			sums[sum] = 1;
 		}
 		for (size_t step : std::views::iota(1u, region_size)) {
-			for (size_t sum : std::views::iota(0u, max_sum)) {
+			for (size_t sum : std::views::iota(0u, (num_system_base - 1) * (step + 1) + 1)) {
 				size_t subsum = 0;
 				for (size_t digit : std::views::iota(0u, std::min(sum + 1, num_system_base))) {
 					subsum += sums[max_sum * (step - 1) + sum - digit];
